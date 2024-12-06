@@ -5,7 +5,7 @@
   font-family: "Space Grotesk", sans-serif;
 }
 
-  .App-header {
+  .AppHeader {
     background-color: #282c34;
     text-align: center;
     height: 60vh;
@@ -16,17 +16,17 @@
     color: white;
   }
 
-  .App-logo {
+  .logoContainer {
     height: 55vmin;
     pointer-events: none;
   }
 
-  .left-header {
+  .leftHeaderContainer {
     margin-top: 5%;
     margin-left: 5%;
   }
 
-  .mainHeader {
+  .leftTitle {
     font-size: 70px;
   }
 
@@ -35,49 +35,52 @@
     font-size: 20px;
     width: 100%;
     margin-top: 2.5%;
-    font-weight:1%;
+    font-weight: 200;
     line-height: 160%;
   }
-  .body {
-    background-color: rgb(232, 194, 125);
+  /**This isn't being used but maybe it could be useful?? **/
+  .bodyContainer {
+    background-color: #e8c27d;
     height: 60vh;
+    display: flex;
   }
-  .buttons {
+
+  .buttonsContainer {
     margin-top: -50px;
     display: flex;
-    align-items: row;
-    justify-content: center;
+    justify-content: space-around;
     color: white;
   }
-  .buttonOne {
-    display: inline-block;
+
+  .pageNavigator {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 25px;
-    background-color: rgb(57, 129, 57);
     color: white;
     width: 300px;
     height: 300px;
     text-align: center;
-    border-radius: 8px;
-    text-decoration:none;
-    outline: none;
-    padding: 40px;
+    border-radius: 30px;
+    border:none;
     margin: 4px 2px;
     font-weight: 600;
-    box-shadow: 2px 2px 3px 3px;
+    padding: 40px;
+    background-color: #429342;
+    cursor: grab;
   }
 
+  .pageNavigator:hover {
+    background-color: #2c612c;
+  }
+
+  .pageNavigator:active {
+    box-shadow: 0px 2px 10px #202329;
+  }
+
+  /**Make this into a universal class at some point**/
   .shadow {
-    box-shadow: 5px 5px 10px 2px;
+    box-shadow: 0px -10px 10px #202329;
   }
-  .button {
-    background-color: #04AA6D;
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-  }
+
   

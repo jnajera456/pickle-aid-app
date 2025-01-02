@@ -1,13 +1,15 @@
 import React from 'react';
 import '../styling-sheets/Header.css';
 
+const randomVar = 'pablo';
+
 function Header() {
     return (
         <header>
             {
             <div>
                 <a>Home</a>
-                <a>About</a>
+<a>About</a>
                 <a>Resources</a>
                 <a>Testimonials</a>
                 <a>How It Works</a>
